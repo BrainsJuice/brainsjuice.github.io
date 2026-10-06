@@ -1,2 +1,2 @@
-# BrainsJuice.github.io
+# brainsjuice.github.io
 Website for Brainjuice
