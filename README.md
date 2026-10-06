@@ -9,6 +9,7 @@ Sito statico: HTML, CSS e un piccolo script. Nessuna build, nessuna dipendenza d
 ```
 index.html              tutta la pagina (testi, prossimo evento, archivio)
 privacy.html            informativa privacy (bozza da far rivedere)
+robots.txt, sitemap.xml indicazioni per i motori di ricerca
 assets/css/style.css    stile; i colori sono tutti nel blocco :root in cima
 assets/js/main.js       date automatiche dell'evento e pulsanti "Copia l'indirizzo"
 assets/fonts/           caratteri Figtree e Fraunces, ospitati nel sito, con le loro licenze
@@ -35,6 +36,7 @@ In `index.html` cerca il commento `PROSSIMO EVENTO`.
 - Il link al form di prenotazione compare due volte: nel pulsante in alto e nel riquadro dell'evento.
 
 Quando l'evento è passato, aggiungilo all'archivio e sostituisci il blocco con l'evento successivo.
+Aggiorna anche i dati dell'evento in cima a `index.html` (cerca `DATI PER I MOTORI DI RICERCA`) e la data `lastmod` in `sitemap.xml`.
 
 ## Aggiungere un evento all'archivio
 
@@ -77,4 +79,7 @@ Se un giorno aggiungete statistiche, video incorporati o mappe, la pagina privac
 
 Funziona su qualsiasi hosting statico, GitHub Pages compreso: basta che `index.html` sia nella radice del ramo pubblicato.
 Il file vuoto `.nojekyll` dice a GitHub Pages di pubblicare i file così come sono.
-In `index.html` i campi `og:url` e `og:image` puntano a `https://brainsjuice.github.io`: se l'indirizzo cambia, aggiornali, altrimenti l'anteprima del link condiviso non funziona.
+L'indirizzo `https://brainsjuice.github.io` è scritto in `index.html` (indirizzo canonico, campi `og:` e dati per i motori di ricerca), in `robots.txt` e in `sitemap.xml`: se cambia, aggiornalo in tutti e tre.
+La pagina privacy è esclusa dai motori di ricerca di proposito.
+
+Per Google Search Console usate una proprietà di tipo «Prefisso URL», verificatela con il file HTML messo nella radice del repository e poi inviate `sitemap.xml`.
