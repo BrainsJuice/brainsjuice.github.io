@@ -1,4 +1,4 @@
 # brainsjuice.github.io
 Website for Brainjuice
 
-[brainsjuice.github.io](brainsjuice.github.io)
+[https://brainsjuice.github.io](https://brainsjuice.github.io)
