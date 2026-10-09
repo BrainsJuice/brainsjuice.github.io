@@ -31,7 +31,7 @@ e vai su http://localhost:8000.
 
 In `index.html` cerca il commento `PROSSIMO EVENTO`.
 
-- `data-deadline="2026-10-10"`: scadenza della call for abstracts. Dal giorno dopo la call sparisce da sola.
+- `data-deadline="2026-10-18"`: scadenza della call for abstracts. Dal giorno dopo la call sparisce da sola.
 - `data-until="2026-10-30"`: giorno dell'evento. Dal giorno dopo spariscono i pulsanti di prenotazione.
 - Il link al form di prenotazione compare due volte: nel pulsante in alto e nel riquadro dell'evento.
 
