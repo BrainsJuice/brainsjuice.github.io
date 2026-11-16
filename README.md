@@ -29,14 +29,17 @@ e vai su http://localhost:8000.
 
 ## Aggiornare il prossimo evento
 
-In `index.html` cerca il commento `PROSSIMO EVENTO`.
+brAIns 2026 è concluso: il blocco `ULTIMA EDIZIONE` conserva programma e dettagli,
+e l’edizione compare anche nell’archivio. Non contiene link di iscrizione o call aperte,
+anche quando JavaScript è disabilitato.
 
-- `data-deadline="2026-10-18"`: scadenza della call for abstracts. Dal giorno dopo la call sparisce da sola.
-- `data-until="2026-10-30"`: giorno dell'evento. Dal giorno dopo spariscono i pulsanti di prenotazione.
-- Il link al form di prenotazione compare due volte: nel pulsante in alto e nel riquadro dell'evento.
-
-Quando l'evento è passato, aggiungilo all'archivio e sostituisci il blocco con l'evento successivo.
-Aggiorna anche i dati dell'evento in cima a `index.html` (cerca `DATI PER I MOTORI DI RICERCA`) e la data `lastmod` in `sitemap.xml`.
+Quando viene annunciato un nuovo evento, aggiornate il blocco e il pulsante in alto,
+conservando le informazioni dell’edizione precedente nell’archivio.
+Aggiornate anche i dati per i motori di ricerca in cima a `index.html`:
+aggiungete un oggetto `Event` con data, luogo, relatori e l’eventuale offerta di iscrizione.
+Alla chiusura rimuovete dall’HTML i link di prenotazione, la call e l’offerta nei metadati;
+non affidatevi soltanto alle date automatiche dello script.
+Aggiornate infine la data `lastmod` in `sitemap.xml`.
 
 ## Aggiungere un evento all'archivio
 
