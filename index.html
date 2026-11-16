@@ -27,10 +27,8 @@
   <link rel="preload" href="assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
-  <!-- DATI PER I MOTORI DI RICERCA
-       Descrivono l'associazione e il prossimo evento a Google. Non si vedono nella pagina.
-       Quando cambi l'evento nel blocco PROSSIMO EVENTO, aggiorna anche la parte "Event" qui sotto
-       (nome, data, luogo, relatori) oppure cancellala se non c'è un evento in programma. -->
+  <!-- DATI PER I MOTORI DI RICERCA: associazione e sito.
+       Aggiungere un Event solo quando viene annunciato il prossimo evento. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,66 +68,6 @@
         "publisher": {
           "@id": "https://brainsjuice.github.io/#organization"
         }
-      },
-      {
-        "@type": "Event",
-        "@id": "https://brainsjuice.github.io/#brains-2026",
-        "name": "brAIns 2026",
-        "description": "Quarta edizione di brAIns. Collegare mente e macchine: apprendimento, memoria e adattamento dal cervello all’IA. Seminari, short talk e poster session.",
-        "startDate": "2026-10-30T17:00:00+01:00",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
-        "inLanguage": "it",
-        "image": [
-          "https://brainsjuice.github.io/assets/img/brains-2026.webp"
-        ],
-        "url": "https://brainsjuice.github.io/#brains",
-        "location": [
-          {
-            "@type": "Place",
-            "name": "Aula Picone, Dipartimento di Matematica, Sapienza Università di Roma",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Piazzale Aldo Moro 5",
-              "postalCode": "00185",
-              "addressLocality": "Roma",
-              "addressCountry": "IT"
-            }
-          },
-          {
-            "@type": "VirtualLocation",
-            "url": "https://forms.gle/KwpeU439AntMQkzZ6"
-          }
-        ],
-        "organizer": {
-          "@id": "https://brainsjuice.github.io/#organization"
-        },
-        "performer": [
-          {
-            "@type": "Person",
-            "name": "Vivaldo Moscatelli",
-            "affiliation": {
-              "@type": "Organization",
-              "name": "Banca d’Italia, EFI"
-            }
-          },
-          {
-            "@type": "Person",
-            "name": "Eleonora Russo",
-            "affiliation": {
-              "@type": "Organization",
-              "name": "The BioRobotics Institute, Scuola Superiore Sant’Anna di Pisa"
-            }
-          }
-        ],
-        "isAccessibleForFree": true,
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock",
-          "url": "https://forms.gle/KwpeU439AntMQkzZ6"
-        }
       }
     ]
   }
@@ -153,7 +91,7 @@
         <h1 id="hero-title">Uniamo cervelli per studiare cervelli.</h1>
         <p class="lede">Studenti e ricercatori tra neuroscienze e intelligenza artificiale, con percorsi in fisica, psicologia, filosofia, ingegneria e non solo. Discutiamo di scienza sul serio, in un clima informale.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://forms.gle/KwpeU439AntMQkzZ6" target="_blank" rel="noopener" data-until="2026-10-30">Prenota il posto a brAIns 2026</a>
+          <a class="btn btn-primary" href="#brains">Scopri brAIns 2026</a>
           <a class="btn btn-ghost" href="#contatti">Scrivici</a>
         </div>
         <p class="motto"><span lang="en">Brains that drink together wire together.</span><small>Da Hebb (1949), con qualche libertà. Aperti anche ad astemi e curiosi.</small></p>
@@ -161,39 +99,22 @@
       <div class="hero-mark"><img src="assets/img/logo.webp" width="512" height="512" alt="Logo BrainJuice: un cervello rosa dentro un bicchiere, con cannuccia e fetta di limone"></div>
     </section>
 
-    <!-- PROSSIMO EVENTO
-         Date in formato AAAA-MM-GG:
-         - data-deadline = scadenza della call for abstracts (dopo quella data la call sparisce e appare il messaggio di chiusura)
-         - data-until    = giorno dell'evento (dopo quella data spariscono i pulsanti di prenotazione)
-         Quando l'evento è passato, spostalo nell'archivio e aggiorna questo blocco con il successivo. -->
+    <!-- ULTIMA EDIZIONE: conservare programma e dettagli come archivio dell’evento. -->
     <section id="brains" class="panel panel-pink" aria-labelledby="brains-title">
       <div class="panel-grid">
         <div class="panel-main">
-          <p class="eyebrow">Prossimo evento · quarta edizione</p>
+          <p class="eyebrow">Evento concluso · quarta edizione</p>
           <h2 id="brains-title">br<span class="ai">AI</span>ns 2026</h2>
           <p class="theme">Collegare mente e macchine: apprendimento, memoria e adattamento dal cervello all’IA.</p>
           <dl class="facts">
-            <div><dt>Quando</dt><dd>Venerdì 30 ottobre<br>dalle 17:00</dd></div>
+            <div><dt>Quando</dt><dd>Venerdì 30 ottobre 2026<br>dalle 17:00</dd></div>
             <div><dt>Dove</dt><dd>Aula Picone, Dip. di Matematica<br>Sapienza Università di Roma</dd></div>
-            <div><dt>Come</dt><dd>In aula o su Zoom<br>gratuito, con registrazione</dd></div>
+            <div><dt>Come</dt><dd>In aula e su Zoom<br>partecipazione gratuita</dd></div>
           </dl>
-          <div class="actions" data-until="2026-10-30">
-            <a class="btn btn-primary" href="https://forms.gle/KwpeU439AntMQkzZ6" target="_blank" rel="noopener">Prenota il tuo posto</a>
-          </div>
-          <p class="support" data-until="2026-10-30">I posti in aula sono limitati e vanno in ordine di iscrizione: se l’aula si riempie, si partecipa da remoto. Il link Zoom arriva per mail il giorno prima.</p>
+          <p class="support">brAIns 2026 si è concluso. Grazie a chi ha partecipato! Le iscrizioni e la call for abstracts sono chiuse.</p>
         </div>
         <img class="panel-art" src="assets/img/brains-2026.webp" width="640" height="640" alt="Illustrazione di brAIns 2026: un robot con un cervello sorridente al posto dello schermo versa una bevanda rosa">
       </div>
-
-      <div class="call" data-deadline="2026-10-18" data-copy-scope>
-        <div class="call-head"><strong>Call for abstracts aperta</strong><span class="pill">fino al 18 ottobre · <span data-days>mancano 8 giorni</span></span></div>
-        <p>Manda titolo e abstract a <span class="email">brainsjuice.team@gmail.com</span>. Non c’è un limite rigido: bastano poche righe. Nella mail scrivi se vuoi presentare solo un poster o essere considerato anche per uno short talk. Gli short talk sono selezionati tra i partecipanti alla poster session.</p>
-        <div class="actions">
-          <a class="btn btn-ghost" href="mailto:brainsjuice.team@gmail.com?subject=Abstract%20brAIns%202026">Scrivi la mail con l’abstract</a>
-          <button class="btn btn-ghost" type="button" id="copy-call" data-copy="brainsjuice.team@gmail.com">Copia l’indirizzo</button>
-        </div>
-      </div>
-      <p class="call-closed" data-after-deadline hidden>La call for abstracts si è chiusa il 18 ottobre. Ci vediamo il 30.</p>
 
       <details class="program">
         <summary>Programma e speaker</summary>
@@ -207,7 +128,7 @@
           <li><time datetime="2026-10-30T18:45">18:45</time><div><strong>Poster session</strong></div></li>
         </ol>
       </details>
-      <p class="support">brAIns 2026 è realizzato con il supporto di Sapienza (Iniziative culturali e sociali degli studenti) e UDU Sapienza.</p>
+      <p class="support">brAIns 2026 è stato realizzato con il supporto di Sapienza (Iniziative culturali e sociali degli studenti) e UDU Sapienza.</p>
     </section>
 
     <section id="attivita" aria-labelledby="att-title">
@@ -232,7 +153,7 @@
           <p class="eyebrow">Evento annuale</p>
           <h3>br<span class="ai">AI</span>ns</h3>
           <p>Seminari accessibili, short talk di studenti e ricercatori e una poster session, per far parlare neuroscienze e AI.</p>
-          <p class="foot">Quarta edizione: <a href="#brains">30 ottobre 2026</a></p>
+          <p class="foot">Ultima edizione: <a href="#brains">30 ottobre 2026</a></p>
         </article>
       </div>
     </section>
@@ -261,6 +182,11 @@
            Per aggiungere un evento copia un <li> e mettilo in cima (dal più recente al più vecchio).
            Etichette: chip-pink = brAIns, chip-mint = Talks, chip-lemon = Spremute. -->
       <ol class="archive">
+        <li><details>
+          <summary><time class="a-date" datetime="2026-10-30">30 ottobre 2026</time>
+            <span class="a-main"><span class="chip chip-pink">brAIns</span><span class="a-title">Quarta edizione</span><span class="a-place">Aula Picone, Sapienza</span></span></summary>
+          <div class="a-body"><p>Collegare mente e macchine: apprendimento, memoria e adattamento dal cervello all’IA. Seminari di Vivaldo Moscatelli ed Eleonora Russo, short talk e poster session.</p><p><a href="#brains">Programma e dettagli dell’edizione 2026</a></p></div>
+        </details></li>
         <li><details>
           <summary><time class="a-date" datetime="2025-10-24">24 ottobre 2025</time>
             <span class="a-main"><span class="chip chip-pink">brAIns</span><span class="a-title">Terza edizione</span><span class="a-place">Aula Picone, Sapienza</span></span></summary>
